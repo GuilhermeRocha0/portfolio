@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-base-family: 'Poppins', sans-serif;
+
+  --color-base-white-100: #ffffff;
+  --color-base-linear: linear-gradient(
+    180deg,
+    rgba(28, 24, 87, 1) 15%,
+    rgba(43, 42, 76, 1) 100%
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  font-family: var(--font-base-family);
+  font-size: 1.6rem;
+}
+
+.container {
+  padding-inline: 14.4rem;
+  padding-block: 14.4rem;
+}
+
+body {
+  background: var(--color-base-linear);
+  background-repeat: no-repeat;
+}
+
+#arrow-down {
+  position: absolute;
+  bottom: 0.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p,
+h1,
+h2 {
+  color: var(--color-base-white-100);
+}
+
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 8rem;
+  padding-block: 2.4rem;
+}
+
+header img {
+  border-radius: 50%;
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+header nav ul {
+  display: flex;
+  column-gap: 6.4rem;
+  transition: filter ease-in-out 1.2s;
+}
+
+header a {
+  font-size: 2rem;
+}
+
+header a:hover {
+  filter: brightness(0.8);
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0;
+
+  height: calc(100vh - 9rem);
+}
+
+#about-info {
+  max-width: 54.4rem;
+}
+
+#about-info h1 {
+  margin-bottom: 2.4rem;
+}
+
+#about-info p:not(:first-of-type) {
+  margin-top: 1.2rem;
+}
+
+#about .user-avatar {
+  border-radius: 50%;
+  width: 25.6rem;
+  height: 25.6rem;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 73.6rem;
+}
+
+#skills h2 {
+  margin-bottom: 1.6rem;
+}
+
+.skills-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  flex-wrap: wrap;
+
+  max-width: 48rem;
+  margin-top: 4rem;
+}
+
+.circle {
+  background-color: var(--color-base-white-100);
+  border-radius: 50%;
+  width: 8.8rem;
+  height: 8.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  row-gap: 0.8rem;
+}
