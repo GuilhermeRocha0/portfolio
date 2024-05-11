@@ -13,6 +13,9 @@
   --font-base-family: 'Poppins', sans-serif;
 
   --color-base-white-100: #ffffff;
+  --color-base-black: #000000;
+  --color-base-slate-800: #1e293b;
+  --color-base-slate-900: #0f172a;
   --color-base-linear: linear-gradient(
     180deg,
     rgba(28, 24, 87, 1) 15%,
@@ -59,7 +62,8 @@ a {
 a,
 p,
 h1,
-h2 {
+h2,
+h4 {
   color: var(--color-base-white-100);
 }
 
@@ -73,6 +77,11 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 header {
@@ -130,27 +139,35 @@ header a:hover {
   height: 25.6rem;
 }
 
-#skills {
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 73.6rem;
 }
 
-#skills h2 {
+.flex-container h2 {
   margin-bottom: 1.6rem;
 }
 
-.skills-cards-container {
+#skills {
+  height: 73.6rem;
+}
+
+.skill-cards-container,
+.project-cards-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4.8rem;
   flex-wrap: wrap;
 
-  max-width: 48rem;
+  max-width: 56rem;
   margin-top: 4rem;
+}
+
+.project-cards-container {
+  max-width: 120rem;
 }
 
 .circle {
@@ -170,4 +187,82 @@ header a:hover {
 
   align-items: center;
   row-gap: 0.8rem;
+}
+
+.project-card {
+  background-color: var(--color-base-slate-900);
+  padding: 1.6rem 3.2rem;
+  border: 1px solid var(--color-base-black);
+  border-radius: 0.8rem;
+
+  width: min(48rem, 100%);
+  height: 16.8rem;
+}
+
+.project-card-title {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.project-card-links {
+  margin-top: 2.4rem;
+}
+
+.project-card-button {
+  padding: 0.8rem 1.6rem;
+  border: 2px solid var(--color-base-slate-800);
+  border-radius: 0.4rem;
+  transition: background ease-in-out 0.4s;
+}
+
+.project-card-button:not(:first-of-type) {
+  margin-left: 1.6rem;
+}
+
+.project-card-button:hover {
+  background-color: var(--color-base-slate-800);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  column-gap: 15rem;
+
+  padding-inline: 14.4rem;
+  padding-block: 4rem;
+  background-color: var(--color-base-slate-900);
+}
+
+footer h4 {
+  margin-bottom: 1.6rem;
+}
+
+.contact-info div > a,
+.roadmap ul li:not(:first-of-type) {
+  margin-top: 0.4rem;
+}
+
+footer li {
+  transition: transform ease-in-out 0.4s;
+}
+
+footer li:hover {
+  transform: scale(1.05);
+}
+
+#about h1,
+#about p,
+.user-avatar {
+  --delay: 0.4s;
+  animation: appear 0.4s var(--delay) backwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }

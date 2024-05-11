@@ -22,7 +22,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -30,9 +29,11 @@
     <main>
       <section id="about" class="container">
         <div id="about-info">
-          <h1>Hello, I'm Guilherme</h1>
-          <p>I’m a student aiming to become a Software Developer.</p>
-          <p>
+          <h1 style="--delay: 0.2s">Hello, I'm Guilherme</h1>
+          <p style="--delay: 0.4s">
+            I’m a student aiming to become a Software Developer.
+          </p>
+          <p style="--delay: 0.4s">
             I was born in Sorocaba and later moved to São Paulo. Currently, I’m
             studying Multiplatform Software Development at FATEC Zona Leste.
           </p>
@@ -41,6 +42,7 @@
           src="https://avatars.githubusercontent.com/u/86208717?v=4"
           alt="Image of Guilherme."
           class="user-avatar"
+          style="--delay: 0.6s"
         />
 
         <a href="#skills" id="arrow-down">
@@ -51,11 +53,11 @@
         </a>
       </section>
 
-      <section id="skills" class="container">
+      <section id="skills" class="container flex-container">
         <h2>Skills</h2>
         <p>I have experience with the following technologies:</p>
 
-        <div class="skills-cards-container">
+        <div class="skill-cards-container">
           <div class="skill-card">
             <div class="circle">
               <img src="./images/html-5-logo.svg" alt="HTML 5 logo." />
@@ -86,6 +88,13 @@
 
           <div class="skill-card">
             <div class="circle">
+              <img src="./images/react-logo.svg" alt="ReactJS logo." />
+            </div>
+            <p>ReactJS</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="circle">
               <img src="./images/sql-logo.svg" alt="SQL logo." />
             </div>
             <p>SQL</p>
@@ -97,12 +106,166 @@
             </div>
             <p>Java</p>
           </div>
+
+          <div class="skill-card">
+            <div class="circle">
+              <img
+                src="./images/spring-boot-logo.svg"
+                alt="Java Spring Boot logo."
+              />
+            </div>
+            <p>Spring Boot</p>
+          </div>
         </div>
       </section>
 
-      <section id="projects"></section>
+      <section id="projects" class="container flex-container">
+        <h2>Projects</h2>
+        <p>A select number of my projects:</p>
 
-      <section id="contact"></section>
+        <div class="project-cards-container">
+          <div class="project-card">
+            <h4 class="project-card-title">digital-clock</h4>
+            <p class="project-card-description">
+              A simple digital clock made using HTML, CSS, and JavaScript.
+            </p>
+
+            <div class="project-card-links">
+              <a
+                href="https://github.com/GuilhermeRocha0/digital-clock.git"
+                target="_blank"
+                class="project-card-button"
+                >View on GitHub</a
+              >
+              <a
+                href="https://guilhermerocha0.github.io/digital-clock/"
+                target="_blank"
+                class="project-card-button"
+                >Deploy</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4 class="project-card-title">countdown-new-year</h4>
+            <p class="project-card-description">
+              A simple countdown to the new year made using HTML, CSS, and
+              JavaScript.
+            </p>
+
+            <div class="project-card-links">
+              <a
+                href="https://github.com/GuilhermeRocha0/countdown-new-year.git"
+                target="_blank"
+                class="project-card-button"
+                >View on GitHub</a
+              >
+              <a
+                href="https://guilhermerocha0.github.io/countdown-new-year/"
+                target="_blank"
+                class="project-card-button"
+                >Deploy</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4 class="project-card-title">convert-case</h4>
+            <p class="project-card-description">
+              A simple Convert Case that allows the user to type a text and
+              transform it by clicking on the buttons.
+            </p>
+
+            <div class="project-card-links">
+              <a
+                href="https://github.com/GuilhermeRocha0/convert-case.git"
+                target="_blank"
+                class="project-card-button"
+                >View on GitHub</a
+              >
+              <a
+                href="https://guilhermerocha0.github.io/convert-case/"
+                target="_blank"
+                class="project-card-button"
+                >Deploy</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4 class="project-card-title">your-menu</h4>
+            <p class="project-card-description">
+              API created with Java Spring Boot for Web Application.
+            </p>
+
+            <div class="project-card-links">
+              <a
+                href="https://github.com/GuilhermeRocha0/your-menu"
+                target="_blank"
+                class="project-card-button"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4 class="project-card-title">your-menu-web</h4>
+            <p class="project-card-description">
+              Aplicação Front-end, utilizando NextJS, para a API your-menu em
+              Java Spring Boot.
+            </p>
+
+            <div class="project-card-links">
+              <a
+                href="https://github.com/GuilhermeRocha0/your-menu-web.git"
+                target="_blank"
+                class="project-card-button"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4 class="project-card-title">library</h4>
+            <p class="project-card-description">
+              Website created to manage the entry and exit of books and who lent
+              them.
+            </p>
+
+            <div class="project-card-links">
+              <a
+                href="https://github.com/GuilhermeRocha0/library.git"
+                target="_blank"
+                class="project-card-button"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="contact-info">
+        <h4>Contact</h4>
+
+        <div>
+          <p>Email</p>
+          <a href="mailto:guilherme.or0@outlook.com"
+            >guilherme.or0@outlook.com</a
+          >
+        </div>
+      </div>
+
+      <nav class="roadmap">
+        <h4>Contact</h4>
+
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
