@@ -1,0 +1,50 @@
+/* Light Theme (Default) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 62.5%; /* 1rem = 10px (ex: 2.4rem = 24px, 3.2rem = 32px) */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --card-bg: #f8fafc;
+  --border-color: #e2e8f0;
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+  --bg-color: #030712;
+  --text-color: #f8fafc;
+  --card-bg: #111827;
+  --border-color: #1f2937;
+  --primary-color: #6366f1;
+  --primary-hover: #4f46e5;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}

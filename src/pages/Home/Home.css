@@ -1,0 +1,406 @@
+/* ======================== UI & Globals ======================== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 1.6rem;
+  margin-top: 6rem;
+}
+
+/* ======================== Hero Section ======================== */
+.hero-section {
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: var(--card-bg);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.4rem;
+  border-radius: 5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
+  color: var(--text-color);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.hero-section p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+/* ======================== Common Sections ======================== */
+.page-section {
+  width: 100%;
+  max-width: 100rem;
+  padding: 6rem 0;
+  border-top: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+}
+
+.section-header p {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* ======================== Profile & Photo ======================== */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.profile-photo {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ======================== Projects Section ======================== */
+.projects-grid-placeholder {
+  width: 100%;
+}
+
+.placeholder-card {
+  background-color: var(--card-bg);
+  border: 2px dashed var(--border-color);
+  border-radius: 1.2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+
+/* ======================== About Section ======================== */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.about-grid.single-column {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-card.main-about-card {
+  width: 100%;
+}
+
+.about-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1.2rem;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.about-card h3 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.about-card p,
+.about-card li {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* ======================== Tech Stack Tags Preview ======================== */
+
+.tech-stack-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.tech-tag {
+  background-color: var(--card-bg);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* ======================== Tech Icons Grid ======================== */
+.tech-icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.tech-icon-tag {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.tech-icon-tag svg {
+  color: var(--primary-color);
+}
+
+.about-extra-info {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.about-extra-info h4 {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+}
+
+/* ======================== Contact Section ======================== */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1.2rem;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 60rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.contact-email-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  background-color: var(--card-bg);
+  padding: 1rem 1.6rem;
+  border-radius: 0.8rem;
+  border: 1px dashed var(--border-color);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-email-display .email-icon {
+  color: var(--primary-color);
+}
+
+.about-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.social-link {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.social-link:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+/* ======================== Buttons ======================== */
+.btn-primary,
+.btn-secondary {
+  width: 100%;
+  padding: 1.3rem 2.4rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--card-bg);
+  border-color: var(--text-color);
+}
+
+/* ======================== Responsive (Desktop) ======================== */
+@media (min-width: 768px) {
+  .home-container {
+    margin-top: 7rem;
+    padding: 0 3rem;
+  }
+
+  .hero-section {
+    min-height: calc(100vh - 7rem);
+  }
+
+  .hero-section h1 {
+    font-size: 4.8rem;
+  }
+
+  .hero-section p {
+    font-size: 1.8rem;
+  }
+
+  .home-actions {
+    flex-direction: row;
+    max-width: none;
+    gap: 1.6rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: auto;
+  }
+
+  .page-section {
+    padding: 8rem 0;
+  }
+
+  .section-header h2 {
+    font-size: 3.4rem;
+  }
+
+  .profile-photo {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-grid.single-column {
+    max-width: 100rem;
+  }
+
+  .about-card {
+    padding: 4rem;
+  }
+}
