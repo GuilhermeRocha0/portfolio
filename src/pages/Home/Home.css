@@ -24,6 +24,7 @@ html {
   text-align: center;
   padding: 4rem 1rem;
   box-sizing: border-box;
+  position: relative;
 }
 
 .hero-content {
@@ -91,7 +92,7 @@ html {
 }
 
 .section-header p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--text-color);
   opacity: 0.7;
 }
@@ -104,28 +105,64 @@ html {
 }
 
 .profile-photo {
-  width: 14rem;
-  height: 14rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--primary-color);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* ======================== Projects Section ======================== */
-.projects-grid-placeholder {
-  width: 100%;
+/* ======================== Scroll Down ======================== */
+.scroll-down-container {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
-.placeholder-card {
-  background-color: var(--card-bg);
-  border: 2px dashed var(--border-color);
-  border-radius: 1.2rem;
-  padding: 4rem 2rem;
-  text-align: center;
+.scroll-arrow {
+  width: 3.2rem;
+  height: 3.2rem;
   color: var(--text-color);
-  opacity: 0.6;
-  font-size: 1.5rem;
+  opacity: 0.8;
+  animation: bounce 2s infinite;
+  transition:
+    opacity 0.2s ease,
+    color 0.2s ease;
+}
+
+.scroll-arrow:hover {
+  opacity: 1;
+  color: var(--primary-color, #646cff);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+/* ======================== Projects Section ======================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  width: 100%;
 }
 
 /* ======================== About Section ======================== */
@@ -164,24 +201,21 @@ html {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 1.2rem;
-  text-align: center;
 }
 
 .about-card p,
 .about-card li {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--text-color);
   line-height: 1.7;
   opacity: 0.85;
 }
 
 /* ======================== Tech Stack Tags Preview ======================== */
-
 .tech-stack-preview {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
   margin: 2rem 0;
 }
 
@@ -204,7 +238,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
   margin-top: 1rem;
 }
 
@@ -228,9 +261,8 @@ html {
 
 .about-extra-info {
   margin-top: 2rem;
-  padding-top: 1.5rem;
+  padding-top: 1.6rem;
   border-top: 1px solid var(--border-color);
-  text-align: center;
 }
 
 .about-extra-info h4 {
@@ -254,7 +286,6 @@ html {
   width: 100%;
   max-width: 60rem;
   box-sizing: border-box;
-  text-align: center;
 }
 
 .contact-email-display {
@@ -294,7 +325,7 @@ html {
   border-radius: 0.8rem;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
@@ -317,7 +348,7 @@ html {
   border-radius: 0.8rem;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
   box-sizing: border-box;
   transition: all 0.2s ease;
@@ -388,8 +419,12 @@ html {
   }
 
   .profile-photo {
-    width: 16rem;
-    height: 16rem;
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .about-grid {
@@ -402,5 +437,15 @@ html {
 
   .about-card {
     padding: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .scroll-down-container {
+    bottom: 2rem;
   }
 }

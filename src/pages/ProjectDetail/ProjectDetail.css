@@ -1,0 +1,215 @@
+/* ======================== Project Detail Layout ======================== */
+.project-detail-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 2rem 6rem 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.project-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  opacity: 0.8;
+  transition:
+    opacity 0.2s ease,
+    color 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+/* ======================== Main Project Info Card ======================== */
+.project-detail-main {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1.2rem;
+  padding: 3.2rem;
+  margin-bottom: 4rem;
+  box-sizing: border-box;
+}
+
+.project-detail-main h1 {
+  font-size: 3.2rem;
+  color: var(--text-color);
+  margin-bottom: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.project-long-desc {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  opacity: 0.85;
+  line-height: 1.7;
+  margin-bottom: 2.4rem;
+}
+
+.project-detail-main .project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.project-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+/* ======================== Media Sections (Images & Videos) ======================== */
+.project-media-section {
+  margin-bottom: 4rem;
+}
+
+.project-media-section h2 {
+  font-size: 2.4rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+.media-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+  box-sizing: border-box;
+}
+
+.project-media-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-card-container {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 28rem;
+  background-color: #000;
+}
+
+.youtube-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.no-media-text {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+/* ======================== Clickable Media ======================== */
+.clickable-media {
+  cursor: pointer;
+  position: relative;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.clickable-media:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-color, #646cff);
+}
+
+.clickable-media:hover .media-overlay-icon {
+  opacity: 1;
+}
+
+.media-overlay-icon {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.media-hint {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  margin-top: -1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+/* ======================== Not Found State ======================== */
+.not-found-container {
+  text-align: center;
+  padding: 14rem 2rem;
+}
+
+.not-found-container h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.not-found-container p {
+  font-size: 1.6rem;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+/* ======================== Responsive Adjustments ======================== */
+@media (min-width: 768px) {
+  .project-detail-container {
+    padding: 10rem 2.4rem 8rem 2.4rem;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-detail-main {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .media-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -11,9 +11,13 @@ import {
   FaJs,
   FaNodeJs,
   FaReact,
-  FaHtml5
+  FaHtml5,
+  FaJava,
+  FaPython
 } from 'react-icons/fa'
-import { SiMongodb, SiPostgresql } from 'react-icons/si'
+import { SiMongodb, SiPostgresql, SiMysql } from 'react-icons/si'
+import { projectsData } from '../../data/projectsData'
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 
 export default function Home() {
   return (
@@ -27,7 +31,7 @@ export default function Home() {
               className="profile-photo"
             />
           </div>
-          <span className="hero-badge">Portfólio Acadêmico</span>
+          <span className="hero-badge">Guilherme Rocha</span>
           <h1>Guilherme Oliveira Rocha</h1>
           <p>
             Estudante de Desenvolvimento de Sistemas na FATEC Zona Leste, focado
@@ -47,21 +51,40 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        <div className="scroll-down-container">
+          <a href="#projects" aria-label="Rolar para a próxima seção">
+            <svg
+              className="scroll-arrow"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </a>
+        </div>
       </section>
 
       <section id="projects" className="page-section projects-section">
         <div className="section-header">
           <h2>Meus Projetos</h2>
           <p>
-            Trabalhos práticos e acadêmicos desenvolvidos ao longo da minha
-            jornada.
+            Projetos interdisciplinares desenvolvidos ao longo dos semestres na
+            FATEC Zona Leste.
           </p>
         </div>
 
-        <div className="projects-grid-placeholder">
-          <div className="placeholder-card">
-            <p>Os cards dos projetos serão adicionados em breve...</p>
-          </div>
+        <div className="projects-grid">
+          {projectsData.map(project => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
       </section>
 
@@ -121,10 +144,19 @@ export default function Home() {
                     <FaNodeJs /> Node.js
                   </span>
                   <span className="tech-icon-tag">
-                    <SiMongodb /> MongoDB
+                    <FaJava /> Java
+                  </span>
+                  <span className="tech-icon-tag">
+                    <FaPython /> Python
+                  </span>
+                  <span className="tech-icon-tag">
+                    <SiMysql /> SQL
                   </span>
                   <span className="tech-icon-tag">
                     <SiPostgresql /> PostgreSQL
+                  </span>
+                  <span className="tech-icon-tag">
+                    <SiMongodb /> MongoDB
                   </span>
                 </div>
               </div>

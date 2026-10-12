@@ -22,6 +22,7 @@
   --border-color: #e2e8f0;
   --primary-color: #4f46e5;
   --primary-hover: #4338ca;
+  --preview-background: #eeeeee;
 }
 
 /* Dark Theme */
@@ -32,6 +33,7 @@
   --border-color: #1f2937;
   --primary-color: #6366f1;
   --primary-hover: #4f46e5;
+  --preview-background: #1f2937;
 }
 
 body {
