@@ -76,8 +76,8 @@ export default function Home() {
         <div className="section-header">
           <h2>Meus Projetos</h2>
           <p>
-            Projetos interdisciplinares desenvolvidos ao longo dos semestres na
-            FATEC Zona Leste.
+            Explore uma seleção de trabalhos e aplicações desenvolvidas ao longo
+            da minha trajetória em desenvolvimento de software.
           </p>
         </div>
 

@@ -17,6 +17,18 @@ import horizonDonorSignup from '../assets/screenshots/horizon/horizon-donor-sign
 import horizonHospitalLogin from '../assets/screenshots/horizon/horizon-hospital-login.png'
 import horizonHospitalSignup from '../assets/screenshots/horizon/horizon-hospital-signup.png'
 
+// Petshop Da Carla
+import petshopHome from '../assets/screenshots/petshop-da-carla/pet-home.jpg'
+import petshopSignup from '../assets/screenshots/petshop-da-carla/pet-customer-signup.jpeg'
+import petshopLogin from '../assets/screenshots/petshop-da-carla/pet-customer-login.jpeg'
+import petshopPetsView from '../assets/screenshots/petshop-da-carla/pet-pets-view.jpg'
+import petshopPetsCreate from '../assets/screenshots/petshop-da-carla/pet-pets-create.jpg'
+import petshopScheduleView from '../assets/screenshots/petshop-da-carla/pet-schedule-view.jpg'
+import petshopScheduleCreate from '../assets/screenshots/petshop-da-carla/pet-schedule-create.jpg'
+import petshopProducts from '../assets/screenshots/petshop-da-carla/pet-products.jpg'
+import petshopProduct from '../assets/screenshots/petshop-da-carla/pet-product.jpg'
+import petshopReports from '../assets/screenshots/petshop-da-carla/pet-reports.jpeg'
+
 export interface Project {
   id: string
   category: string
@@ -37,9 +49,9 @@ export const projectsData: Project[] = [
     category: '1º Semestre',
     title: 'Buku',
     description:
-      'Projeto interdisciplinar desenvolvido no 1º semestre da FATEC Zona Leste.',
+      'Plataforma web de incentivo à leitura através da troca e empréstimo colaborativo de livros entre usuários.',
     longDescription:
-      'Aplicação desenvolvida como projeto integrador do primeiro semestre, aplicando os fundamentos iniciais de lógica de programação, estruturação e desenvolvimento web. ',
+      'O Buku é uma plataforma colaborativa desenvolvida com o propósito de incentivar o hábito da leitura e democratizar o acesso a livros. O sistema permite que leitores se conectem para realizar empréstimos e trocas de obras literárias de forma simples e intuitiva, promovendo a circulação de conhecimento e a comunidade leitora.',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     githubLinks: [
       {
@@ -56,9 +68,9 @@ export const projectsData: Project[] = [
     category: '2º Semestre',
     title: 'Horizon',
     description:
-      'Projeto interdisciplinar desenvolvido no 2º semestre da FATEC Zona Leste.',
+      'Plataforma para conscientização e facilitação da doação de sangue, conectando doadores e hospitais.',
     longDescription:
-      'Sistema desenvolvido durante o segundo semestre, aprofundando conceitos de desenvolvimento web, design responsivo e estruturação de interfaces.',
+      'O Horizon é uma solução web criada para incentivar e simplificar o processo de doação de sangue. A aplicação atua como uma ponte entre doadores voluntários e pontos de coleta/hospitais, fornecendo informações sobre o processo de doação, esclarecendo mitos, apresentando benefícios e facilitando o cadastro de doadores e instituições parceiras.',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     githubLinks: [
       {
@@ -81,16 +93,16 @@ export const projectsData: Project[] = [
       horizonHospitalLogin,
       horizonHospitalSignup
     ],
-    videos: []
+    videos: ['https://www.youtube.com/embed/BY7YsHAX4zE?si=jbYg6nZAchHDnM88']
   },
   {
     id: 'petshop-da-carla',
     category: '3º Semestre',
     title: 'Petshop da Carla',
     description:
-      'Sistema completo para gestão de petshop com API Backend e Interface Web.',
+      'Sistema para petshop com cadastro de pets, agendamento de serviços e catálogo de e-commerce.',
     longDescription:
-      'Projeto do 3º semestre focado na criação de uma solução fullstack, contando com uma API robusta para gerenciamento de dados e uma aplicação web integrada.',
+      'Aplicação fullstack desenvolvida para a gestão completa de um petshop. O sistema permite que clientes realizem o cadastro de seus pets, agendem serviços essenciais (como banho, tosa e corte de unhas) e explorem um e-commerce integrado para a compra de produtos e acessórios. Conta com uma API RESTful dedicada no backend e relatórios gerenciais.',
     technologies: ['React.js', 'Node.js', 'MongoDB'],
     githubLinks: [
       {
@@ -102,18 +114,29 @@ export const projectsData: Project[] = [
         url: 'https://github.com/GuilhermeRocha0/petshop_web'
       }
     ],
-    preview: '',
-    images: [],
-    videos: []
+    preview: petshopHome,
+    images: [
+      petshopHome,
+      petshopSignup,
+      petshopLogin,
+      petshopPetsView,
+      petshopPetsCreate,
+      petshopScheduleView,
+      petshopScheduleCreate,
+      petshopProducts,
+      petshopProduct,
+      petshopReports
+    ],
+    videos: ['https://www.youtube.com/embed/Q9N18BhBG3E?si=mPIpBXXh4a2ngOxR']
   },
   {
     id: 'life-plus-web',
     category: '4º Semestre',
     title: 'Life + (Versão Web)',
     description:
-      'Plataforma web voltada à área da saúde desenvolvida no 4º semestre.',
+      'Plataforma web para gestão da saúde, centralizando receitas, exames e lembretes de medicamentos.',
     longDescription:
-      'Sistema web focado em melhorias de processos e acompanhamento, estruturado com arquitetura cliente-servidor dividida entre API e Front-end.',
+      'O Life+ é uma plataforma voltada à organização pessoal na área da saúde. A versão web permite que os usuários cadastrem e organizem seus medicamentos com horários de lembrete, além de centralizar em um só lugar histórico de exames e receitas médicas, facilitando o acompanhamento de tratamentos contínuos.',
     technologies: ['React.js', 'Node.js', 'PostgreSQL'],
     githubLinks: [
       {
@@ -134,9 +157,9 @@ export const projectsData: Project[] = [
     category: '5º Semestre',
     title: 'Life + (Mobile)',
     description:
-      'Continuação do Life + com refatoração da API e introdução do aplicativo Mobile.',
+      'Aplicativo mobile para controle de rotina de medicamentos, notificações e organização de exames.',
     longDescription:
-      'Evolução do projeto do semestre anterior, trazendo melhorias estruturais na API e expandindo o ecossistema com o desenvolvimento de uma versão mobile multiplataforma.',
+      'Evolução do ecossistema Life+, trazendo uma experiência mobile nativa para acesso rápido em dispositivos móveis. O aplicativo auxilia o usuário no dia a dia com lembretes visuais de rotina de medicamentos, consulta rápida a receitas cadastradas e armazenamento prático de exames médicos diretamente no smartphone.',
     technologies: ['React Native', 'Node.js', 'PostgreSQL'],
     githubLinks: [
       {
@@ -145,11 +168,11 @@ export const projectsData: Project[] = [
       },
       {
         label: 'Repositório Mobile',
-        url: 'https://github.com/GuilhermeRocha0/life-plus-web'
+        url: 'https://github.com/GuilhermeRocha0/life-plus-mobile'
       }
     ],
     preview: '',
     images: [],
-    videos: []
+    videos: ['https://www.youtube.com/embed/Fiw-3dZI_UY?si=MoW9b1cUb1xLwkDm']
   }
 ]
