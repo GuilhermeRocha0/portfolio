@@ -29,6 +29,42 @@ import petshopProducts from '../assets/screenshots/petshop-da-carla/pet-products
 import petshopProduct from '../assets/screenshots/petshop-da-carla/pet-product.jpg'
 import petshopReports from '../assets/screenshots/petshop-da-carla/pet-reports.jpeg'
 
+// Life+ Web
+import lifePlusWebHome from '../assets/screenshots/life-plus-web/life-plus-home.png'
+import lifePlusWebSignup from '../assets/screenshots/life-plus-web/life-plus-signup.png'
+import lifePlusWebLogin from '../assets/screenshots/life-plus-web/life-plus-login.png'
+import lifePlusWebResetPassword from '../assets/screenshots/life-plus-web/life-plus-reset-password.png'
+import lifePlusWebProfile from '../assets/screenshots/life-plus-web/life-plus-profile.png'
+import lifePlusWebExamCreate from '../assets/screenshots/life-plus-web/life-plus-exam-create.png'
+import lifePlusWebExamList from '../assets/screenshots/life-plus-web/life-plus-exam-list.png'
+import lifePlusWebExamDetails from '../assets/screenshots/life-plus-web/life-plus-exam-details.png'
+import lifePlusWebExamUpdate from '../assets/screenshots/life-plus-web/life-plus-exam-update.png'
+import lifePlusWebMedicineCreate from '../assets/screenshots/life-plus-web/life-plus-medicine-create.png'
+import lifePlusWebMedicineList from '../assets/screenshots/life-plus-web/life-plus-medicine-list.png'
+import lifePlusWebMedicineDetails from '../assets/screenshots/life-plus-web/life-plus-medicine-details.png'
+import lifePlusWebMedicineUpdate from '../assets/screenshots/life-plus-web/life-plus-medicine-update.png'
+import lifePlusWebSettings from '../assets/screenshots/life-plus-mobile/life-plus-settings.png'
+
+// Life+ Mobile
+import lifePlusMobileHome01 from '../assets/screenshots/life-plus-mobile/life-plus-home-01.png'
+import lifePlusMobileHome02 from '../assets/screenshots/life-plus-mobile/life-plus-home-02.png'
+import lifePlusMobileHome03 from '../assets/screenshots/life-plus-mobile/life-plus-home-03.png'
+import lifePlusMobileHome04 from '../assets/screenshots/life-plus-mobile/life-plus-home-04.png'
+import lifePlusMobileSignup from '../assets/screenshots/life-plus-mobile/life-plus-signup.png'
+import lifePlusMobileLogin from '../assets/screenshots/life-plus-mobile/life-plus-login.png'
+import lifePlusMobileDashboard from '../assets/screenshots/life-plus-mobile/life-plus-dashboard.png'
+import lifePlusMobileProfile from '../assets/screenshots/life-plus-mobile/life-plus-profile.png'
+import lifePlusMobileExamCreate from '../assets/screenshots/life-plus-mobile/life-plus-exam-create.png'
+import lifePlusMobileExamList from '../assets/screenshots/life-plus-mobile/life-plus-exam-list.png'
+import lifePlusMobileExamDetails from '../assets/screenshots/life-plus-mobile/life-plus-exam-details.png'
+import lifePlusMobileExamUpdate from '../assets/screenshots/life-plus-mobile/life-plus-exam-update.png'
+import lifePlusMobileMedicineCreate from '../assets/screenshots/life-plus-mobile/life-plus-medicine-create.png'
+import lifePlusMobileMedicineList from '../assets/screenshots/life-plus-mobile/life-plus-medicine-list.png'
+import lifePlusMobileMedicineDetails from '../assets/screenshots/life-plus-mobile/life-plus-medicine-details.png'
+import lifePlusMobileMedicineUpdate from '../assets/screenshots/life-plus-mobile/life-plus-medicine-update.png'
+import lifePlusMobileMedicineNextDose from '../assets/screenshots/life-plus-mobile/life-plus-medicine-next-dose.png'
+import lifePlusMobileSettings from '../assets/screenshots/life-plus-mobile/life-plus-settings.png'
+
 export interface Project {
   id: string
   category: string
@@ -148,8 +184,23 @@ export const projectsData: Project[] = [
         url: 'https://github.com/GuilhermeRocha0/life-plus-web'
       }
     ],
-    preview: '',
-    images: [],
+    preview: lifePlusWebHome,
+    images: [
+      lifePlusWebHome,
+      lifePlusWebSignup,
+      lifePlusWebLogin,
+      lifePlusWebResetPassword,
+      lifePlusWebProfile,
+      lifePlusWebExamCreate,
+      lifePlusWebExamList,
+      lifePlusWebExamDetails,
+      lifePlusWebExamUpdate,
+      lifePlusWebMedicineCreate,
+      lifePlusWebMedicineList,
+      lifePlusWebMedicineDetails,
+      lifePlusWebMedicineUpdate,
+      lifePlusWebSettings
+    ],
     videos: []
   },
   {
@@ -171,8 +222,27 @@ export const projectsData: Project[] = [
         url: 'https://github.com/GuilhermeRocha0/life-plus-mobile'
       }
     ],
-    preview: '',
-    images: [],
+    preview: lifePlusMobileHome01,
+    images: [
+      lifePlusMobileHome01,
+      lifePlusMobileHome02,
+      lifePlusMobileHome03,
+      lifePlusMobileHome04,
+      lifePlusMobileSignup,
+      lifePlusMobileLogin,
+      lifePlusMobileDashboard,
+      lifePlusMobileProfile,
+      lifePlusMobileExamCreate,
+      lifePlusMobileExamList,
+      lifePlusMobileExamDetails,
+      lifePlusMobileExamUpdate,
+      lifePlusMobileMedicineCreate,
+      lifePlusMobileMedicineList,
+      lifePlusMobileMedicineDetails,
+      lifePlusMobileMedicineUpdate,
+      lifePlusMobileMedicineNextDose,
+      lifePlusMobileSettings
+    ],
     videos: ['https://www.youtube.com/embed/Fiw-3dZI_UY?si=MoW9b1cUb1xLwkDm']
   }
 ]
