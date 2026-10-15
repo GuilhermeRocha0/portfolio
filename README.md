@@ -1,24 +1,31 @@
 # 🚀 Portfólio Pessoal - Guilherme Rocha
 
-Portfólio acadêmico e profissional desenvolvido para apresentar meus projetos, trajetória e conhecimentos na área de desenvolvimento de software.
+Portfólio profissional desenvolvido para apresentar meus projetos, trajetória e conhecimentos na área de desenvolvimento de software.
 
-## 🛠️ Tecnologias Utilizadas
-
-Este projeto foi construído utilizando tecnologias modernas de mercado:
-
-- **React.js / React Router** — Construção de componentes e roteamento
-- **TypeScript** — Tipagem estática e segurança no código
-- **CSS Moderno (Flexbox / Grid / Variáveis CSS)** — Estilização responsiva e suporte a Dark/Light Mode
-- **React Icons** — Ícones vetoriais para stack e redes sociais
-
-## 👨‍💻 Sobre Mim
-
-Estudante de **Desenvolvimento de Sistemas** na **FATEC Zona Leste** (6° semestre). Focado na criação de aplicações web e mobile, desenvolvimento de APIs robustas e modelagem de banco de dados.
-
-- 🌐 **LinkedIn:** [linkedin.com/in/guilherme-oliveira-rocha](https://www.linkedin.com/in/guilherme-oliveira-rocha/)
-- 🐙 **GitHub:** [github.com/GuilhermeRocha0](https://github.com/GuilhermeRocha0)
-- ✉️ **Contato:** guilherme.or0@outlook.com
+🌐 **Acesse o Portfólio Online:** [https://guilherme-rocha-portfolio.netlify.app/](https://guilherme-rocha-portfolio.netlify.app/)
 
 ---
 
-Desenvolvido por **Guilherme Oliveira Rocha**.
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído utilizando tecnologias modernas de desenvolvimento web:
+
+- **React.js & React Router** — Arquitetura baseada em componentes e roteamento dinâmico
+- **TypeScript** — Tipagem estática para maior previsibilidade e manutenção do código
+- **Vite** — Build tool rápida para desenvolvimento frontend
+- **CSS Moderno (Flexbox / Grid / Variáveis CSS)** — Layout totalmente responsivo com suporte a Dark e Light Mode
+
+---
+
+## 👨‍💻 Sobre Mim & Contato
+
+Estudante de **Desenvolvimento de Sistemas** na **FATEC Zona Leste** (6° semestre). Focado no desenvolvimento de aplicações web e mobile, construção de APIs robustas e modelagem de banco de dados.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-oliveira-rocha/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GuilhermeRocha0)
+
+🌐 **Portfólio Web:** [guilherme-rocha-portfolio.netlify.app](https://guilherme-rocha-portfolio.netlify.app/)
+
+---
+
+Desenvolvido com 💙 por **Guilherme Oliveira Rocha**.
