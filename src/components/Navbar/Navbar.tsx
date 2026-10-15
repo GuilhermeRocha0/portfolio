@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import './Navbar.css'
 
@@ -12,6 +12,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,13 +29,20 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
 
   const closeMenu = () => setIsMenuOpen(false)
 
-  const handleScrollTo = (id: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault()
     closeMenu()
+
     if (location.pathname === '/') {
       const element = document.getElementById(id)
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' })
       }
+    } else {
+      navigate(`/#${id}`)
     }
   }
 
@@ -44,7 +52,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
         <Link
           to="/"
           className="navbar-logo"
-          onClick={() => handleScrollTo('start')}
+          onClick={e => handleNavClick(e, 'start')}
         >
           Guilherme Rocha
         </Link>
@@ -54,28 +62,28 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             <a
               href="#start"
               className="nav-link"
-              onClick={() => handleScrollTo('start')}
+              onClick={e => handleNavClick(e, 'start')}
             >
               Início
             </a>
             <a
               href="#projects"
               className="nav-link"
-              onClick={() => handleScrollTo('projects')}
+              onClick={e => handleNavClick(e, 'projects')}
             >
               Projetos
             </a>
             <a
               href="#about"
               className="nav-link"
-              onClick={() => handleScrollTo('about')}
+              onClick={e => handleNavClick(e, 'about')}
             >
               Sobre
             </a>
             <a
               href="#contact"
               className="nav-link"
-              onClick={() => handleScrollTo('contact')}
+              onClick={e => handleNavClick(e, 'contact')}
             >
               Contato
             </a>
